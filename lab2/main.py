@@ -14,7 +14,6 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtGui import QIcon, QFont
 
-
 class YaCalendar(QWidget):
     def __init__(self):
         super().__init__()
@@ -24,6 +23,7 @@ class YaCalendar(QWidget):
         self.UiComponents()
 
         self.show()
+
     def UiComponents(self):
         self.setWindowTitle("Find data")
 
@@ -370,6 +370,8 @@ class Window(QMainWindow):
         else:
             return
 
+def print_hello(user_name):
+    print(f"Hello, {user_name}")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
